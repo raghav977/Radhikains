@@ -1,0 +1,265 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    /* color: #fff; */
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color:#222; */
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top: 1rem;
+    background-color:#333;
+    z-index:10;
+    height:80px;
+    color:white;
+    /* position: fixed; */
+    
+    padding: 1.25rem;
+}
+.logo{
+    cursor: pointer;
+}
+header ul li{
+    display:inline-block;
+    
+}
+header ul li a{
+    padding:16px;
+    /* position: relative; */
+    font-size:18px;
+    display: inline-block;
+
+    text-decoration: none;
+    color:white;
+    transition: all ease-in-out 0.6s;
+    /* border-bottom:4px solid red; */
+}
+header ul li a::after{
+        content: "";
+        border-bottom: 2px solid green;
+        display: block;
+        padding-bottom: 10px;
+        width:0;
+        opacity:0;
+        
+    }
+header ul li a:hover{
+        border-bottom: 2px;
+        color:red;
+        width: 100%;
+        font-size:20px;
+        transition: all 0.5s ease-in-out ;
+    }
+header ul li a:hover::after{
+        opacity: 1;
+        width: 90%;
+        transition: width 0.5s ease-in-out;
+    }
+.celebrate{
+    /* border: 3px solid red; */
+    text-align:center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+}
+.who{
+    margin-top: 4rem;
+    text-align:center;
+
+}
+.about-us{
+    /* border: 3px solid red; */
+    /* margin-top:4rem; */
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    
+
+}
+.we{
+    text-align: center;
+    font-size:2rem;
+    font-weight: bold;
+}
+.about-us img{
+    width: 500px;
+    border-radius: 10%;
+}
+.events{
+    text-align: center;
+    margin-top:2rem;
+}
+
+.gallery img{
+    width:300px;
+    border:5px solid black;
+    object-fit: cover;
+}
+.gallery{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.football  img{
+    height:200px;
+}
+.basketball img{
+    height:200px;
+}
+button{
+    display: flex;
+    /* border: 2px solid red; */
+    border-radius: 8%;
+    align-items: center;
+    /* justify-content: space-around; */
+    margin-left:60px;
+    /* width: 150px; */
+    /* justify-content: center; */
+    font-size: 1.5rem;
+    margin-top: 5px;
+    background-color: #F7B32B;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    border:2px solid black;
+}
+.popular::first-letter{
+    font-size: 200%;
+
+}
+a{
+    text-decoration:none;
+}
+.about-us p::first-letter{
+    font-size:400%;
+    color:red;
+    
+}
+button:hover{
+    background-color:white;
+}
+form{
+    /* border:2px solid red; */
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+}
+input{
+    width:200px;
+    margin:0 auto;
+    height:25px;
+}
+.contactus{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    margin-top:2rem;
+    background-color:rgb(4, 25, 18);
+    color:white;
+}
+.btn{
+    margin:10px auto;
+}
+iframe{
+    filter: invert(100%);
+}
+.contact{
+    margin-top:2rem;
+}
+footer{
+    margin-top: 5rem;
+    background-color: black;
+    color:white;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+i{
+    padding:15px;
+}
+.icons a{
+    text-decoration: none;
+    color:white;
+}
+.made{
+    margin-top:2rem;
+    font-size:11px;
+}
+
+@media  (max-width:900px){
+    header  {
+        display:block;
+        height:400px;
+        width: 100%;
+        overflow:hidden;
+        /* padding-top: 1rem; */
+    }
+    header .logo{
+        text-align: center;
+    }
+    header ul li{
+        display: block;
+        padding-top:1rem;
+        text-align: center;
+    }
+    .celebrate h1{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .about-us {
+        display:flex;
+        flex-direction: column;
+        padding-top: 2rem;
+       
+    }
+    .about-us p{
+        margin-bottom: 2rem;
+        width: 100%;
+        font-size: 1rem;
+    
+        
+    }
+    .about-us img{
+        overflow: hidden;
+        object-fit: cover;
+        display: block;
+        width:100%;
+        
+    }
+    .contactus{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactus .location{
+        margin-top:2rem;
+        
+    }
+    footer{
+        width: 100vw;
+   
+}
+@media (max-width:1200px){
+    .gallery{
+        display:flex;
+        flex-direction:column;
+    }
+}
+@media (max-width:630px){
+    iframe{
+        width:300px;
+        overflow: hidden;
+        display:block;
+        
+    }
+}
